@@ -76,7 +76,7 @@ tensorrt_image = tensorrt_image.apt_install(
 MODEL_DIR = "/root/model/model_input"
 MODEL_ID = "mistralai/Mamba-Codestral-7B-v0.1"
 MODEL_REVISION = "d4521ac4b7658f796233ce47e8e695933f3cd48a"  # pin model revisions to prevent unexpected changes!
-HF_TOKEN = os.env["HF_TOKEN"]
+HF_TOKEN = os.environ["HF_TOKEN"]
 
 
 def download_model():
